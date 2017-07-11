@@ -1,0 +1,46 @@
+body{
+	background-color: #191970;
+}
+#login{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+#login h2{
+	text-align: center;
+	color: #f0ecec;
+	font-size: 45px;
+	font-family: sans-serif;
+}
+#login input{
+	display: block;
+	width: 320px;
+	height: 40px;
+	padding: 10px;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #f0ecec;
+	background: #515066;
+	border: 2px solid #515066;
+	border-radius: 12px 12px 12px 12px;
+	margin-bottom: 25px;
+}
+#login #login_btn{
+	background : #7bacbe;
+	width: 320px;
+	height: 50px;
+	font-size :27px;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: text-bottom; 
+
+}
+#login #forgot_pass{
+	color: #f0ecec;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: text-bottom; 
+}
