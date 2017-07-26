@@ -1,0 +1,90 @@
+@charset "utf-8";
+#back_body{
+	background-image:url(../Images/hero-test.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	}
+#header{
+	font-family:sans-serif;
+	}
+#u_list{
+	list-style-type:none;
+	float:right;
+	}
+#u_item {
+	float:left;
+	}
+#u_item a{
+	color:black;
+	font-family:sans-serif;
+	font-size:16px;
+	padding: 50px 10px 50px 10px;
+	}
+#u_item a:hover{
+	background-color:#000033;
+	color:#FFFFFF;
+	font-size:large;
+	}
+#l_list{
+	list-style-type:none;
+	}
+#l_item{
+	font-size:larger;
+	font-family:sans-serif;
+	color:#000033;
+	font-weight:bold;
+	padding: 50px 50px 50px 50px;
+	}
+#l_item:hover{
+	background-color:#000033;
+	color:#FFFFFF;
+	}
+#Asgn_review{
+	border-collapse:collapse;
+	padding-top: 1px;
+	padding-right: 10px;
+	padding-left:10px;
+	font-family:sans-serif;
+	color:#f0ecec;
+	}
+#Asgn_review td{
+	border: 1px solid #000000;
+	}
+#back_body a:hover{
+	font-size:large;
+	}
+#sub {
+	border-collapse:collapse;
+	}
+#sub td{
+	 border:1px solid #000000;
+	}
+#dropdwnbtn1 {
+	background-color:#000033;
+	color:#f0ecec;
+	font-size:14px;
+	cursor:pointer;
+	}
+.dropdwncontent1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	}
+#dropdwncontent1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	}
+#dropdwncontent1 a:hover {
+	background-color: #f1f1f1
+	}
+#dropdwncontent1 {
+    display: block;
+	}
+#dropdwnbtn1 {
+    background-color: #3e8e41;
+	}
