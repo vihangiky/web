@@ -1,0 +1,81 @@
+body{
+	background-image: url("hero-test.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.text{
+	text-align: center; 
+	color: #f0ecec; 
+	font-size: 30px; 
+	font-family: sans-serif;
+}
+h2{
+	padding-top: 50px;
+	font-size: 40px;
+	font-family: sans-serif;
+	color:#f0ecec;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.general {
+    color: white;
+    border-width: 0px;
+    border-style: none;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.ev{
+  font-size: 25px;
+}
+
+.p{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+img{
+  float: right;
+  width:230px;
+  height: 200px;
+}
+.btn{
+  color: #f0ecec;
+  background : #7bacbe;
+
+}
+.table{
+  border: 0px;
+  text-align: center;
+  border-spacing:0px;  
+}
+.wi{
+  width:270px;
+}

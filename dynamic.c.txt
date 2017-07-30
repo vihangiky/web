@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node { 	float data;
+				struct node* next;	};
+struct queue { 	struct node* head, *tail;	};
+
+void init(struct queue* q){ q->head=q->tail=0; }
+int full(struct queue* q){ return 0;} 	// never be full - change to a more reasonable
+int empty(struct queue* q){return !q->head;}  // return 1 if empty
+struct node* makenode(float item){  struct node* p=(struct node*)malloc(sizeof(struct node));
+                                    if(!p) return 0;    // return null if malloc fails
+                                    p->data=item;
+                                    p->next=0;
+                                    return p;
+}
+
+int enqueue(struct  queue *q, float item){  struct node* p=makenode(item);
+                                            if(!p) return 0;    // if makenode fails exit with a 0
+                                            if(empty(q))   q->head=q->tail=p;
+                                            else{   q->tail->next=p;    // if not empty add to the tail
+                                                    q->tail=p;  }
+                                            return 1;    // return a success/one
+}
+float dequeue(struct queue*q){  float item = q->head->data; // copy the data item to be returned
+                                struct node* p = q->head;   // keep track of the head node
+                                q->head=q->head->next;      // adjust the head to point to new head node
+                                if(q->tail==p) q->tail=0;   // if removing the last node adjust tail as well
+                                free(p);                    // free the head node
+                                return item;                // exit by returning the data that was at head node
+}
+
+void main(void){
+struct queue q;         // define a queue
+init(&q);
+int i;
+for(i=0;i<100;i++) enqueue(&q,i);
+for(i=0;i<50;i++) printf("F%f\t",dequeue(&q));
+for(i=100;i<150;i++) enqueue(&q,i);
+while(!empty(&q)) printf("S%f\t",dequeue(&q));
+}
